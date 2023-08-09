@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZNGLP22BL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BZNGLP22BL');
+</script>
+<title>cube</title>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<br>
+<center>
+  <div> <!-- <div style="position: relative; width: 200px"> -->
+    <!-- <img src="/spinning-cube.gif"> -->
+    <img src="https://github.com/Windowszin/spinningcube/blob/main/spinning-cube.gif?raw=true" width: 100px height: 100px>
+    <div id="ethan" style="position: absolute; top: 12px; right: 2px; width: 80px; background-color: #aaa; color: #f00; padding: 5px; display: none">
+      You REALLY like cubes
+    </div>
+    <div id="xd" style="position: absolute; top: 12px; right: 2px; width: 80px; background-color: #aaa; color: #f00; padding: 5px; display: none">
+    You <big>REALLY</big> like cubes
+    </div>
+  </div>
+</center>
+<br>
+<center>
+  <big>You have sat through <span id="spin">0 spins</span>!</big>
+</center>
+  <a href="/readme.md">About Spinningcube</a><br>
+  <a href="/gifinfo.txt">About the GIF(yeah, <b>the cube</b>)</a><br>
+  <a href="https://chihuahuaspin.com/">About the original website (inspiration)</a><br>
+  <a href="https://github.com/Windowszin/spinningcube/tree/main/">See it in Github!</a><br>
+  <a href="https://github.com/Windowszin">More of me!</a>
+  
+  
+</body>
+</html>
+
+<script>
+$(window).load(function (){
+  var spins = 0;
+  setInterval(function () {
+    spins = spins + 1;
+    $("#spin").text(spins + " spin" + (spins != 1 ? "s" : ""));
+    if (spins == 10)
+      $("#ethan").show();
+    else if (spins == 17)
+      $("#ethan").hide();
+          else if (spins == 25)
+      $("#xd").show();
+                else if (spins == 27)
+      $("#xd").hide();
+      
+      
+  }, 2100);
+});
+</script>
+
+<!-- og code by chihauhaspin.com -->
