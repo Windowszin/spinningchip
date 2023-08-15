@@ -1,4 +1,4 @@
-# spinningcube.html (.gif)
+# spinningchip.html (.gif)
 Inspired by https://chihuahuaspin.com/, but open-source!
 Check the license.md for more details! :)
 
