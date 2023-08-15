@@ -26,6 +26,9 @@
     <div id="xd" style="position: absolute; top: 12px; right: 2px; width: 80px; background-color: #aaa; color: #f00; padding: 5px; display: none">
     You <big>REALLY</big> like chips
     </div>
+    <div id="omg" style="position: absolute; top: 12px; right: 2px; width: 80px; background-color: #aaa; color: #f00; padding: 5px; display: none">
+    You <big>REALLY REALLY REALLY REALLY REALLY </big> like chips
+    </div>
   </div>
 </center>
 <br>
@@ -57,7 +60,10 @@ $(window).load(function (){
       $("#xd").show();
                 else if (spins == 27)
       $("#xd").hide();
-      
+                else if (spins == 40)
+      $("#omg").show();
+                else if (spins == 50)
+      $("#omg").hide();
       
   }, 1175);
 });
